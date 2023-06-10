@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fredoka:wght@300;400;500&family=Smooch+Sans:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+@import "./sass_partials/profile";
+@import "./sass_partials/info";
+@import "./sass_partials/login";
+@import "./sass_partials/home";

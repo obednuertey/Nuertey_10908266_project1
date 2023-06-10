@@ -1,0 +1,60 @@
+$headerAndFooter: #023047;
+$other: #1d3557;
+$buttonHover: #ffb703;
+$buttonClicked: #fb8500;
+$headerAndFooter: #023047;
+#mainLogin {
+  height: 92vh !important;
+  background-color: $headerAndFooter !important;
+  color: #fff;
+  width: 100%;
+  margin: 0 !important;
+  align-items: center;
+  margin-top: -10px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formElements {
+  h2 {
+    text-align: center;
+  }
+  form {
+    #login-submit {
+      display: block;
+      margin: 10px auto;
+      width: 5em;
+      padding: 5px;
+      border-radius: 10px;
+      background-color: rgb(32, 127, 178);
+      border: none;
+      box-shadow: 1px 1px 3px 0.5px black;
+    }
+    #login-submit:active {
+      background-color: $buttonClicked;
+      box-shadow: 2px 1px 2px $buttonClicked;
+    }
+    input {
+      display: block;
+      margin: 10px;
+      margin-left: unset;
+      margin-right: unset;
+      height: 2.5em;
+      width: 20em;
+      background-color: transparent;
+      border: none;
+      border-bottom: 2px solid;
+      border-radius: 10px;
+      color: white;
+      padding: 1rem;
+      box-shadow: initial;
+      outline: initial;
+    }
+  }
+  .registerLink {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 11px;
+  }
+}

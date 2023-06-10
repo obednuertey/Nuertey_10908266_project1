@@ -1,0 +1,344 @@
+@import url("https://fonts.googleapis.com/css2?family=Concert+One&family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Fredoka:wght@300;400;500&family=Smooch+Sans:wght@500&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body,
+#root {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+#profile-main {
+  color: #1d3557;
+  margin-top: 4rem;
+  height: 100vh;
+}
+#profile-main h1 {
+  text-align: center;
+}
+#profile-main #sections {
+  display: grid;
+  width: 100%;
+  height: 80%;
+  grid-template-rows: 60% 30%;
+}
+#profile-main #sections section {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 20px 20px 0 20px;
+  border: 2px double #1d3557;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: 20% -1;
+}
+#profile-main #sections section h2 {
+  text-align: center;
+}
+#profile-main #sections section div {
+  margin: 0 auto;
+}
+#profile-main #sections section div form legend {
+  font-weight: bold;
+  color: rgb(50, 47, 255);
+  text-align: center;
+}
+#profile-main #sections section div form #update-password {
+  color: #fff;
+  width: 10em;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(32, 127, 178);
+  border: none;
+  box-shadow: 1px 1px 3px 0.5px black;
+}
+#profile-main #sections section div form #update-password:active {
+  background-color: #fb8500;
+  box-shadow: 2px 1px 2px #fb8500;
+}
+#profile-main #sections section div form input {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: unset;
+  margin-right: unset;
+  height: 2.5em;
+  width: 20em;
+  background-color: transparent;
+  border-bottom: 2px solid;
+  border-radius: 10px;
+  color: #1d3557;
+  padding: 1rem;
+  box-shadow: initial;
+  outline: initial;
+}
+#profile-main #sections section:last-of-type {
+  border-bottom: none;
+}
+
+#danger-zone {
+  font-weight: bolder;
+  color: crimson;
+}
+
+#delete-account {
+  padding: 0.5rem;
+  font-size: 1rem;
+  background-color: transparent;
+  color: crimson;
+  border: 5px solid crimson;
+  outline: none;
+  border-radius: 10px;
+}
+
+#delete-account:active {
+  color: white;
+  background-color: crimson;
+}
+
+#info-main {
+  margin-top: 4rem;
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+}
+#info-main #formRules {
+  vertical-align: center;
+}
+#info-main #formRules h2 {
+  text-align: center;
+  color: #1d3557;
+}
+#info-main #formRules form #login-submit {
+  width: 5em;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(32, 127, 178);
+  border: none;
+  box-shadow: 1px 1px 3px 0.5px black;
+}
+#info-main #formRules form #login-submit:active {
+  background-color: #fb8500;
+  box-shadow: 2px 1px 2px #fb8500;
+}
+#info-main #formRules form input {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: unset;
+  margin-right: unset;
+  height: 2.5em;
+  width: 20em;
+  background-color: transparent;
+  border-bottom: 2px solid;
+  border-radius: 10px;
+  color: #1d3557;
+  padding: 1rem;
+  box-shadow: initial;
+  outline: initial;
+}
+
+.required {
+  color: red;
+}
+
+#mainLogin {
+  height: 92vh !important;
+  background-color: #023047 !important;
+  color: #fff;
+  width: 100%;
+  margin: 0 !important;
+  align-items: center;
+  margin-top: -10px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.formElements h2 {
+  text-align: center;
+}
+.formElements form #login-submit {
+  display: block;
+  margin: 10px auto;
+  width: 5em;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: rgb(32, 127, 178);
+  border: none;
+  box-shadow: 1px 1px 3px 0.5px black;
+}
+.formElements form #login-submit:active {
+  background-color: #fb8500;
+  box-shadow: 2px 1px 2px #fb8500;
+}
+.formElements form input {
+  display: block;
+  margin: 10px;
+  margin-left: unset;
+  margin-right: unset;
+  height: 2.5em;
+  width: 20em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid;
+  border-radius: 10px;
+  color: white;
+  padding: 1rem;
+  box-shadow: initial;
+  outline: initial;
+}
+.formElements .registerLink {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 11px;
+}
+
+header {
+  top: 0px;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  margin: 0 auto !important;
+  background-color: #023047;
+  color: white;
+  padding: 15px;
+  padding-right: 20px;
+  font-size: 14px;
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+}
+header .logo, header nav a, header nav a:active,
+header nav a:hover,
+header nav a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  border: 0.3px solid black;
+  padding: 5px;
+  border-radius: 4px;
+  color: inherit;
+}
+header .logo:active, header nav a:active {
+  background-color: #fb8500;
+  box-shadow: 1px 1px 3px 1px #fb8500;
+  border-color: #fb8500;
+}
+header .logo:hover, header nav a:hover {
+  background-color: #ffb703;
+  box-shadow: 1px 1px 3px 1px #ffb703;
+  border-color: #ffb703;
+}
+header nav {
+  align-items: center;
+}
+header nav a, header nav a:active,
+header nav a:hover,
+header nav a:focus {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin-left: 5px;
+}
+header nav a:active,
+header nav a:hover,
+header nav a:focus {
+  text-decoration: none;
+}
+header nav a:active {
+  background-color: #fb8500;
+  box-shadow: 1px 1px 3px 1px #fb8500;
+  border-color: #fb8500;
+}
+
+.motherCase {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    right: 0px;
+  }
+  footer {
+    width: 100% !important;
+    height: 20px;
+    padding: 3em !important;
+    padding-bottom: 2em;
+  }
+  footer p {
+    margin-right: 20px;
+  }
+}
+footer {
+  font-size: 12px;
+  height: 40px;
+  text-align: center;
+  padding: 4em;
+  border-top: 0.5px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #023047;
+  color: white !important;
+  padding-bottom: 2rem;
+}
+
+#homeMain {
+  background: transparent;
+  width: 100%;
+  max-width: 1000px;
+  min-width: 100px;
+  margin: 0 auto;
+  margin-top: 75px;
+  padding: 10px;
+  margin-bottom: 4rem;
+  color: #1d3557;
+}
+#homeMain #dashboard {
+  margin: 130px auto 0 auto;
+  text-align: center;
+}
+#homeMain #components {
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#homeMain #components .content {
+  background-color: transparent;
+  width: 270px;
+  height: 275px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px 2px #000;
+  grid-template-rows: 40% 60%;
+}
+#homeMain #components .content .dashName {
+  text-align: center;
+}
+#homeMain #components .content .dashData {
+  height: 70%;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#homeMain #components .content .dashData h3 {
+  display: inline;
+  margin: auto;
+  top: 40;
+  font-size: 5em;
+  text-justify: center;
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */
